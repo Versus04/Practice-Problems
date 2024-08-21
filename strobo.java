@@ -11,7 +11,9 @@ public class strobo {
             h.put('6', '9');
 
             int n = s.length();
-            for(int i= 0, j=n-1 ; i<n ;i++ , j--){ 
+
+            for(int i= 0, j=n-1 ; i<n  ;i++ , j--){ 
+
                 char left = s.charAt(i);
                 char right = s.charAt(j);
                 char m = h.getOrDefault(left,'-');
