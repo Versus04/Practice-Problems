@@ -27,6 +27,7 @@ public class strobo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
+        sc.close();
         if(strobonum(s)){System.out.println( s +" is a strobo grammatic number");}
         else { System.out.println(s + " is not a strobo grammatic number");}
     }
