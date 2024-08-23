@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class segmentedsieve {
     static int n =100000;
@@ -18,12 +18,9 @@ public class segmentedsieve {
                 }
             }
         }
-       
-        
-            
-       
 
     }
+
     static ArrayList<Integer> generatePrime(int high){
         ArrayList<Integer> ll = new ArrayList<>();
         
@@ -37,8 +34,10 @@ public class segmentedsieve {
     return ll;
     }
    public static void main(String[] args) {
-        int high = 130;
-        int low = 110 ;
+        Scanner sc  = new Scanner(System.in);
+        int high = sc.nextInt();
+        int low = sc.nextInt();
+        sc.close();
         sieve();
         ArrayList<Integer> lll = generatePrime(high);
         boolean[] dummy = new boolean[high-low+1];
@@ -48,6 +47,7 @@ public class segmentedsieve {
         for(int i: lll){
             int first = (low/i)*i;
             if(first<low){first+=i;}
+
             for(int j = Math.max(first, i*i) ; j<high;j+=i){
                     dummy[j-low]=false;
 
