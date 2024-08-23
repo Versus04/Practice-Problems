@@ -1,32 +1,27 @@
 import java.util.*;
 public class simplesieve {
 
-    static void sievecount(int n , int k){
-        int count = 0;
+    static void sieve(int n){
         boolean[] sieve = new boolean[n+1];
         sieve[0]=sieve[1]=false;
-        for(int i = 2 ; i<sieve.length;i++){sieve[i]=true;}
-        for(int i = 2 ; i<sieve.length; i++){
-            if (sieve[i]) {
-                for(int j = i*i ; j<sieve.length ;j+=i){
-                    sieve[j] = false ; 
+        for(int i = 2; i< n ;i++){
+            sieve[i]=true;
+        }
 
+        for(int i = 2; i<Math.sqrt(n) ;i++){
+            if(sieve[i]){
+                for(int j = i*i;j<n; j+=i){
+                    sieve[j]=false;
                 }
             }
         }
-            for(int i =2 ;i<sieve.length ; i++){
-                if(sieve[i]){
-                    count++;
-                    if(count==k){System.out.println(i); break;}
-                }
-
+        for(int i = 2; i< n ;i++){
+            if (sieve[i]) {
+                System.out.println(i);
             }
-
-            for(int i =2 ; i<sieve.length ; i++){
-                for(int j = i+1 ; j<sieve.length;j++){
-                        if(sieve[i] && sieve[j] && (j-i==2)){System.out.println( "(" +i +"," + j + ")");}
-                }
-            }
+        }
+        
+            
        
 
     }
@@ -35,7 +30,7 @@ public class simplesieve {
 
         int n = sc.nextInt();
         sc.close();
-        sievecount(n  , 10);
+        
         
     
     }

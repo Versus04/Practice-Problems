@@ -4,9 +4,7 @@ public class chineseremainder {
 
     static int findmin(int[] nums , int[] rem , int k){
         int x =1;
-        boolean flag = false ;
         while (true) {
-
 
             int j ;
             for( j = 0 ;j<k ;j++){

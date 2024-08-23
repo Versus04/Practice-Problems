@@ -7,8 +7,9 @@ public class boothsalgo {
         int m2 = sc.nextInt();
         
         int n = Integer.toBinaryString(m1).length();
-        System.out.println(n);
+        
         int p = 0;
+        sc.close();
         for(int i = 0 ; i<n;i++)
         {
             int unit = (m1&0b1);
