@@ -30,6 +30,7 @@ public class simplesieve {
 
         int n = sc.nextInt();
         sc.close();
+        sieve(n);
         
         
     
