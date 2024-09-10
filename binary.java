@@ -1,9 +1,6 @@
 public class binary {
-   
-
-    static boolean palindrome(int N){
-
-        String s =Integer.toBinaryString(N);
+    static boolean palindrome(int n){
+        String s =Integer.toBinaryString(n);
         int i = 0 , j = s.length()-1;
         while (i<j) {
             if (s.charAt(i)!=s.charAt(j)) {
