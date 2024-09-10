@@ -14,8 +14,9 @@ public class binary {
         }
         return true;
     }
+    
     public static void main(String[] args) {
-        System.out.println(palindrome(2));
+        System.out.println(palindrome(5));
     }
     
 }

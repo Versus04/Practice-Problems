@@ -7,7 +7,6 @@ public class boothsalgo {
         int m2 = sc.nextInt();
         
         int n = Integer.toBinaryString(m1).length();
-        
         int p = 0;
         sc.close();
         for(int i = 0 ; i<n;i++)
