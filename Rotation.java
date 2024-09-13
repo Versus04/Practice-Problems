@@ -7,9 +7,9 @@ public class Rotation {
     //left rotation
         res[i] = arr[(i+k)%n];
     //for right rotation
-    //res[i] = arr[(n-k+i)%n];
+        //res[i] = arr[(n-k+i)%n];
+    
     }
-
     return res;
    }
     public static void main(String[] args) {
