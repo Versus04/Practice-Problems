@@ -7,7 +7,7 @@ int main() {
     cin>>n;
     vector<ll> v;
     v.push_back(n);
-    while(n!=1)
+    while(n!=1) 
     {
         if(n%2==0)
         {
