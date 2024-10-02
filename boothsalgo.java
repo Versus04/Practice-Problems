@@ -15,7 +15,7 @@ public class boothsalgo {
             if (unit==1) {
                 p=p+m2;
             }
-        m1 = m1>>>1;
+        m1 = m1>>1;
         m2=m2<<1;
         
 

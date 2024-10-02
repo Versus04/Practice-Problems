@@ -12,7 +12,8 @@ public class chineseremainder {
             }
             if(j==k)break;
             x++;
-        }return x ; 
+        }
+        return x ; 
         
     }
 
